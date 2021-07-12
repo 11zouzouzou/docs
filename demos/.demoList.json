@@ -1,0 +1,19 @@
+[
+	{"label": "演示1", "src": "demo1"},
+	{"label": "演示2", "src": "demo2"},
+  {"label": "演示3", "src": "demo3"},
+	{
+		"group": "分组",
+		"src": "group",
+		"demos": [
+			{
+				"label": "子1",
+				"src": "demo1"
+			},
+			{
+				"label": "子2",
+				"src": "demo2"
+			}
+		]
+	}
+]

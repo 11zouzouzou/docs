@@ -1,9 +1,15 @@
 {
   "scripts": {
-    "initDocsify":"docsify init ./docsify",
-    "serveDocsify": "docsify serve ./docsify"
+    "initDocsify": "docsify init ./docsify",
+    "serveDocsify": "docsify serve ./docsify",
+    "demoDev": "demosify --serve",
+    "demoProd": "demosify --prod"
   },
   "dependencies": {
-    "docsify-cli": "^4.4.3"
+    "@babel/standalone": "7.10.0",
+    "@demosify/core": "^0.7.0",
+    "@types/three": "^0.130.0",
+    "docsify-cli": "^4.4.3",
+    "three": "^0.130.1"
   }
 }
