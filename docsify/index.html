@@ -51,10 +51,30 @@
       nameLink: '/#/sidebarTest/README.md',//点击name or logo 跳转
 
       markdown: {//可以通过自定义renderer以下内容来自定义将 Markdown 内容呈现为 HTML 的方式
-        smartypants: false,
+        smartypants: true,
         renderer: {
-          // link: function () {
-          //   // ...
+          // link: function (href, title, text) {
+          //   // console.log('link', href, title, text);
+          //   //TODO need read docsify source code copy link..
+          //   let testTypeDoc = false;
+          //   const re = new String(href);
+          //   if (re.slice(0, 9) == '/typeDoc/') {
+          //     testTypeDoc = true;
+          //   };
+          //   let isHttpLink = false;
+          //   if (re.slice(0,4) == 'http') {
+          //     return `<a href="${href}" title="${title}" target="_blank">${text}</a>`;
+          //   }
+          //   let isZip =false;
+          //   if (re.split('.').pop().toLowerCase() == 'zip') {
+          //     isZip = true;
+          //     testTypeDoc = true;
+          //   }
+          //   let q = testTypeDoc ? '.' : '#';
+          //   let target = testTypeDoc ? "_blank" : '_self';
+          //   const readLocalUrl =  `<a href="${q + href}" title="${title}" target="${target}">${text}</a>`;
+          //   const downLoadUrl =  `<a href="${q + href}" title="${title}" target="${target}" downLoad="dist.zip">${text}</a>`
+          //   return isZip ? downLoadUrl : readLocalUrl;
           // }
         }
       },
